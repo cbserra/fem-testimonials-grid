@@ -1,7 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-blue-500 hover:text-blue-400 hover:underline transition-all;
+@layer base {
+  body {
+    @apply flex min-h-screen flex-col bg-light-grayish-blue font-sans;
+  }
+
+  main {
+    @apply flex min-h-full flex-col gap-y-6 px-6 py-20;
+  }
+  a {
+    @apply text-blue-500 transition-all hover:text-blue-400 hover:underline;
+  }
+
+  article {
+    @apply rounded-lg pt-7 pr-8 pb-8 pl-8;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  }
+
+  header img {
+    @apply w-7 rounded-full border-2 border-solid;
+  }
+
+  header {
+    @apply flex items-center justify-start gap-x-4;
+  }
+  article p {
+    @apply mt-[16px] mb-[18px] text-lg font-semibold;
+  }
+
+  article blockquote {
+    @apply text-md font-medium;
+  }
+}
+
+@layer components {
+  .author {
+    @apply flex flex-col  font-medium;
+  }
+
+  .author > .name {
+    @apply text-sm;
+  }
+  .author > .position {
+    @apply text-xs;
+  }
+  .daniel {
+    @apply bg-moderate-violet bg-quotes bg-[right_1.5rem_top] bg-no-repeat text-white;
+  }
+
+  .daniel .position,
+  .jonathan .position,
+  .patrick .position {
+    @apply text-white text-opacity-50;
+  }
+
+  .daniel > blockquote,
+  .jonathan > blockquote,
+  .patrick > blockquote {
+    @apply text-white text-opacity-70;
+  }
+
+  .jonathan {
+    @apply bg-very-dark-grayish-blue text-white;
+  }
+
+  .jeanette {
+    @apply bg-white text-very-dark-grayish-blue;
+  }
+
+  .jeanette .position,
+  .kira .position {
+    @apply text-very-dark-grayish-blue text-opacity-50;
+  }
+
+  .jeanette blckquote,
+  .kira blockquote {
+    @apply text-very-dark-grayish-blue text-opacity-70;
+  }
+
+  .patrick {
+    @apply bg-very-dark-blackish-blue text-light-grayish-blue;
+  }
+
+  .kira {
+    @apply bg-white text-very-dark-grayish-blue;
+  }
 }
