@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply flex min-h-screen flex-col items-center justify-center bg-light-grayish-blue font-sans;
+    @apply flex min-h-screen flex-col items-center justify-center bg-light-grayish-blue font-sans antialiased;
   }
 
   main {
