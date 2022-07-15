@@ -35,7 +35,7 @@
   header {
     @apply flex items-center justify-start gap-x-4;
   }
-  article p {
+  article h1 {
     /* @apply mt-[16px] mb-[18px] ; */
     @apply text-lg font-semibold;
   }
