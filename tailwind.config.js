@@ -19,7 +19,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'quotes': 'url("./src/assets/bg-pattern-quotation.svg")',
+        'quotes': 'url("./bg-pattern-quotation.svg")',
       },
 
       fontSize: {
